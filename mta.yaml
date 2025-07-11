@@ -93,6 +93,10 @@ modules:
         - npm run build
       supported-platforms:
         []
+  - name: test
+    type: nodejs_buildpack
+    path: app/index.html
+    
 resources:
   - name: ordermanage-auth
     type: org.cloudfoundry.managed-service
