@@ -5,7 +5,11 @@
       "target": "$1",
       "destination": "srv-api",
       "csrfProtection": true
-    }
+    },
+    {
+      "source":"^/web-pages/(.*)$",
+      "localDir":"landingpage"
+      }
   ],
   "welcomeFile": "index.html"
 }
