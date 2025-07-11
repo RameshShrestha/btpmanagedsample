@@ -7,9 +7,9 @@
       "csrfProtection": true
     },
     {
-      "source": "^(.*)$",
-      "localDir": "resources"
-    }
+      "source":"^/web-pages/(.*)$",
+      "localDir":"myresources"
+      }
   ],
   "welcomeFile": "/index.html"
 }
