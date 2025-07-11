@@ -11,6 +11,5 @@
       "localDir": "resources"
     }
   ],
-  "welcomeFile": "/index.html",
-  "authenticationMethod": "none"
+  "welcomeFile": "/index.html"
 }
