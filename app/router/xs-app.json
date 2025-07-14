@@ -7,8 +7,8 @@
       "csrfProtection": true
     },
     {
-      "source":"^/web-pages/(.*)$",
-      "localDir":"landingpage"
+      "source":"^/appconfig/(.*)$",
+      "localDir":"appconfig"
       }
   ],
   "welcomeFile": "index.html"
