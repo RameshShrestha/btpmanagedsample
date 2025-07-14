@@ -8,8 +8,12 @@ cds.on('bootstrap', (app) => {
 
   // Serve the static index.html file
   router.get('/index.html', (req, res) => {
-    const filePath = path.join(__dirname, '..','app','index.html');
+    const filePath = path.join(__dirname,'app','index.html');
     res.sendFile(filePath);
+  });
+  router.get('/test', (req, res) => {
+    const filePath = path.join(__dirname,'app','index.html');
+    res.send(filePath);
   });
 
    // Serve the static index.html file
@@ -17,6 +21,7 @@ cds.on('bootstrap', (app) => {
     const filePath = path.join(__dirname, '..','app','appconfig','fioriSandboxConfig.json');
     res.sendFile(filePath);
   });
+  app.use(express.static(path.join(__dirname)));
   // Attach the router to the CAP app
   app.use(router);
 });
