@@ -1,15 +1,16 @@
 {
   "routes": [
+   
+    {
+      "source":"^/appconfig/(.*)$",
+      "localDir":"appconfig"
+      },
     {
       "source": "^/(.*)$",
       "target": "$1",
       "destination": "srv-api",
       "csrfProtection": true
-    },
-    {
-      "source":"^/appconfig/(.*)$",
-      "localDir":"appconfig"
-      }
+    }
   ],
-  "welcomeFile": "index.html"
+  "welcomeFile": "/index.html"
 }
