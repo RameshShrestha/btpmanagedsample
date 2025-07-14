@@ -8,12 +8,12 @@ cds.on('bootstrap', (app) => {
 
   // Serve the static index.html file
   router.get('/index.html', (req, res) => {
-    const filePath = path.join(__dirname,'app','index.html');
+    const filePath = path.join(__dirname,'..','app','index.html');
     res.sendFile(filePath);
   });
   router.get('/test', (req, res) => {
-    const filePath = path.join(__dirname,'app','index.html');
-    res.send(filePath);
+    const filePath = path.join(__dirname,'..','app','index.html');
+    res.sendFile(filePath);
   });
 
    // Serve the static index.html file
@@ -21,9 +21,9 @@ cds.on('bootstrap', (app) => {
     const filePath = path.join(__dirname, '..','app','appconfig','fioriSandboxConfig.json');
     res.sendFile(filePath);
   });
-  app.use(express.static(path.join(__dirname)));
+  app.use(express.static(path.join(__dirname,'..','app')));
   // Attach the router to the CAP app
-  app.use(router);
+  app.use('/appconfig', express.static(path.join(__dirname, '..','app','appconfig')));
 });
 
 // Start the CAP server
