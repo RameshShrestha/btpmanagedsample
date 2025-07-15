@@ -67,10 +67,7 @@ modules:
       - comrameshordermanagement.zip
       name: comrameshordermanagement
       target-path: app/
-    - artifacts:
-      - comrameshwelcome.zip
-      name: comrameshwelcome
-      target-path: app/
+    
 - name: comrameshmanageemployee
   type: html5
   path: app/manageemployee
@@ -91,16 +88,7 @@ modules:
     - npm install
     - npm run build:cf
     supported-platforms: []
-- name: comrameshwelcome
-  type: html5
-  path: app/welcome
-  build-parameters:
-    build-result: dist
-    builder: custom
-    commands:
-    - npm install
-    - npm run build:cf
-    supported-platforms: []
+
 resources:
 - name: ordermanage-auth
   type: org.cloudfoundry.managed-service
