@@ -2,9 +2,9 @@
   "routes": [
    
     {
-      "source":"^/appconfig/(.*)$",
+      "source":"^/mainpage/(.*)$",
       "target" :"/$1",
-      "localDir":"appconfig"
+      "localDir":"mainpage"
       },
     {
       "source": "^/(.*)$",
