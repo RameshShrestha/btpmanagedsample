@@ -14,5 +14,5 @@
     }
   ],
   
-  "welcomeFile": "./index.html"
+  "welcomeFile": "/appconfig/index.html"
 }

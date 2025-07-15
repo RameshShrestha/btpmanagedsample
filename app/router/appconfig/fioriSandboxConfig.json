@@ -63,7 +63,7 @@
               "resolutionResult": {
                 "applicationType": "SAPUI5",
                 "additionalInformation": "SAPUI5.Component=com.ramesh.manageemployee",
-                "url": "manageemployee/webapp"
+                "url": "../../../comrameshmanageemployee"
               }
             },
             "manageorder": {
@@ -77,7 +77,7 @@
               "resolutionResult": {
                 "applicationType": "SAPUI5",
                 "additionalInformation": "SAPUI5.Component=com.ramesh.ordermanagement",
-                "url": "ordermanagement/webapp"
+                "url": "../../../comrameshordermanagement"
               }
             }
           }
