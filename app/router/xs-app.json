@@ -3,6 +3,7 @@
    
     {
       "source":"^/appconfig/(.*)$",
+      "target" :"/$1",
       "localDir":"appconfig"
       },
     {
@@ -12,5 +13,6 @@
       "csrfProtection": true
     }
   ],
-  "welcomeFile": "/index.html"
+  
+  "welcomeFile": "./index.html"
 }
